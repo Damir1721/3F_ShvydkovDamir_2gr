@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 6 - Shvydkov</title>
+    <script type="text/javascript">
+        function okno_zamknij_shvydkov() {
+            window.close();
+        }
+    </script>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <h2>Zadanie 6 - Teoria: Okienka, konwersja i zmienne</h2>
+
+    <p><b>1) Rodzaje okienek:</b></p>
+    <ul>
+        <li><u>Okienko alert</u> – wyświetla okienko dialogowe z informacją i przyciskiem <b>OK</b>.</li>
+        <li><u>Okienko prompt</u> – generuje okno, w którym użytkownik może <b>wpisać wartość</b>, zwracaną następnie do programu.</li>
+        <li><u>Okienko confirm</u> – służy do tego, aby użytkownik coś <b>potwierdził</b> (zwraca wartość logiczną <i>true</i> lub <i>false</i>).</li>
+    </ul>
+
+    <p><b>2) Konwersja zmiennych:</b></p>
+    <p>Wczytanie zmiennej z użyciem <i>prompt</i> wykonywane jest jako ciąg znaków (String), dlatego konieczna jest konwersja z ciągu znaków na wartości liczbowe, aby wykonywać obliczenia:</p>
+    <ul>
+        <li><u>parseFloat(zmienna)</u> - konwersja zmiennej do typu <b>float</b> (zmiennoprzecinkowego)</li>
+        <li><u>parseInt(zmienna)</u> - konwersja zmiennej do typu <b>int</b> (liczbowego całkowitego)</li>
+        <li><u>toString(zmienna)</u> - konwersja zmiennej do typu <b>łańcuchowego</b> (tekstowego)</li>
+    </ul>
+
+    <p><b>3) Zasady nadawania nazw zmiennym:</b></p>
+    <ol>
+        <li>Nazwa zmiennej <u>musi się zaczynać od litery, znaku "$" lub "_"</u>. Może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".</li>
+        <li><u>Wielkość liter ma znaczenie</u> (np. <i>Rekord</i> i <i>rekord</i> to dwie różne zmienne).</li>
+        <li>Należy <u>nie używać słów kluczowych JavaScript</u> jako nazw zmiennych.</li>
+    </ol>
+
+    <p><b>4) Typy zmiennych w JavaScript:</b></p>
+    <ul>
+        <li><u>Number</u> – typ liczbowy (zmienne całkowite oraz zmiennoprzecinkowe)</li>
+        <li><u>String</u> – typ tekstowy</li>
+        <li><u>Boolean</u> – typ logiczny (true / false)</li>
+        <li><u>Null</u> – pusta zawartość</li>
+        <li><u>Undefined</u> – typ niezidentyfikowany</li>
+        <li><u>Object</u> – obiekt</li>
+    </ul>
+
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_shvydkov()" />
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 11 - Shvydkov</title>
+    <script type="text/javascript">
+        function okno_zamknij_shvydkov() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    
+    <div style="color:green; font-size:47px;">
+        <script language="JavaScript">
+            var D1_shv = prompt("Podaj pierwszy dzień stycznia (D1)=", "");
+            var D2_shv = prompt("Podaj drugi dzień stycznia (D2)=", "");
+            var sekund;
+            var a = parseFloat(D1_shv);
+            var b = parseFloat(D2_shv);
+
+            sekund = (a - b) * 24 * 60 * 60;
+            document.write("Ilość sekund między dniami " + a + " i " + b + " = " + sekund + " sekund<br>");
+        </script>
+    </div>
+
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_shvydkov()" />
+
+</body>
+</html>

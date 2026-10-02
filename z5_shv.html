@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 5 - Shvydkov</title>
+    <script type="text/javascript">
+        // Okna dla grafiki - wąskie i wysokie (np. width=160, height=320)
+function WinOpen_shvydkov_1() {
+    // Grafika 1 - Lewy dół
+    window.open("g1_shv.html", "okno_g1", "toolbar=no,directories=no,menubar=no,height=320,width=180,top=350,left=150");
+}
+function WinOpen_shvydkov_2() {
+    // Grafika 2 - Środek-dół
+    window.open("g2_shv.html", "okno_g2", "toolbar=no,directories=no,menubar=no,height=320,width=180,top=150,left=350");
+}
+function WinOpen_shvydkov_3() {
+    // Grafika 3 - Środek-góra
+    window.open("g3_shv.html", "okno_g3", "toolbar=no,directories=no,menubar=no,height=320,width=180,top=75,left=550");
+}
+function WinOpen_shvydkov_4() {
+    // Grafika 4 - Prawy góra
+    window.open("g4_shv.html", "okno_g4", "toolbar=no,directories=no,menubar=no,height=320,width=180,top=50,left=750");
+}
+        function okno_zamknij_kowalski() {
+            window.close();
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+
+    <h2 style="color: red; font-size: 22px;">wykonał: Damir Shvydkov mój numer w dzienniku 23, czyli mam układ [(23) mod 4=3] układ 3</h2>
+
+    <p>
+        <input type="button" value="grafika1" onclick="WinOpen_shvydkov_1()" />
+        <input type="button" value="grafika2" onclick="WinOpen_shvydkov_2()" />
+        <input type="button" value="grafika3" onclick="WinOpen_shvydkov_3()" />
+        <input type="button" value="grafika4" onclick="WinOpen_shvydkov_4()" />
+    </p>
+
+    <br><br>
+
+    <p>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_kowalski()" />
+    </p>
+
+</body>
+</html>
