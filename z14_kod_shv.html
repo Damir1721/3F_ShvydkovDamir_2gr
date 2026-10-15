@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 14 KOD - Shvydkov</title>
+</head>
+<body>
+
+<textarea cols="90" rows="25">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 14 - Shvydkov</title>
+</head>
+<body>
+
+<div style="color:green; font-size:40px;">
+<script language="JavaScript">
+    // Damir Shvydkov 3F
+    // Zadanie 14 - Rozkład ułamka egipskiego na trzy ułamki
+
+    var m_shv = prompt("Podaj liczbę m=", "");
+    var m = parseFloat(m_shv);
+
+    var u1 = m + 2;
+    var u2 = (m + 1) * (m + 2);
+    var u3 = m * (m + 1);
+
+    document.write("1/" + m + " = 1/" + u1 + " + 1/" + u2 + " + 1/" + u3 + "<br>");
+
+    function okno_zamknij() {
+        window.close();
+    }
+</script>
+</div>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

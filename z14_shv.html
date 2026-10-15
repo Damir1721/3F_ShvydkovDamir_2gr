@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 14 - Shvydkov</title>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    <div style="color:green; font-size:40px;">
+        <script language="JavaScript">
+            var m_shv = prompt("Podaj liczbę m=", "");
+            var m = parseFloat(m_shv);
+
+            var u1 = m + 2;
+            var u2 = (m + 1) * (m + 2);
+            var u3 = m * (m + 1);
+
+            document.write("1/" + m + " = 1/" + u1 + " + 1/" + u2 + " + 1/" + u3 + "<br>");
+        </script>
+    </div>
+
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>

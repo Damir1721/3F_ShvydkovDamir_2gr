@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 16 - Shvydkov</title>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    <div style="color:navy; font-size:35px;">
+        <script language="JavaScript">
+            var A_shv = prompt("Podaj pierwszą liczbę A=", "");
+            var B_shv = prompt("Podaj drugą liczbę B=", "");
+
+            var a = parseFloat(A_shv);
+            var b = parseFloat(B_shv);
+
+            var a3 = a * a * a;
+            var a2b = 3 * (a * a) * b;
+            var ab2 = 3 * a * (b * b);
+            var b3 = b * b * b;
+
+            var wynik = a3 + a2b + ab2 + b3;
+
+            document.write("A=" + a + "&nbsp;&nbsp;&nbsp;&nbsp;B=" + b + "<br>");
+            document.write("(" + a + " + " + b + ")^3 = ");
+            document.write(a + "^3 + 3*((" + a + ")^2)*(" + b + ") + 3*(" + a + ")*((" + b + ")^2) + " + b + "^3 = ");
+            document.write(a3 + " + " + a2b + " + " + ab2 + " + " + b3 + " = " + wynik + "<br>");
+        </script>
+    </div>
+
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>
