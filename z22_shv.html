@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 22 - Shvydkov</title>
+    <script language="JavaScript">
+        function Pole_shvydkov(a_shv, b_shv) {
+            var a = parseFloat(a_shv);
+            var b = parseFloat(b_shv);
+            var pole_wynik = a * b;
+            document.getElementsByName('pole')[0].value = pole_wynik.toFixed(2);
+            alert("Pole prostokąta = " + pole_wynik.toFixed(2) + " cm^2");
+            wyprowadz_pole_shv.innerHTML = "Pole prostokąta = " + pole_wynik.toFixed(2) + " cm^2" + "<br>";
+        }
+
+        function obwod_shvydkov(a_shv, b_shv) {
+            var a = parseFloat(a_shv);
+            var b = parseFloat(b_shv);
+            var obw_wynik = 2 * a + 2 * b;
+            document.getElementsByName('obw')[0].value = obw_wynik.toFixed(2);
+            alert("Obwód prostokąta = " + obw_wynik.toFixed(2) + " cm");
+            wyprowadz_obwod_shv.innerHTML = "Obwód prostokąta = " + obw_wynik.toFixed(2) + " cm";
+        }
+
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Obliczanie pola oraz obwodu prostokąta</h2>
+    <br>
+    <form name="formularz" action="..." onsubmit="Pole_shvydkov(this.a_dana_shv.value, this.b_dana_shv.value); obwod_shvydkov(this.a_dana_shv.value, this.b_dana_shv.value); return false">
+        Podaj bok a =
+        <input size="6" name="a_dana_shv">
+        Podaj bok b =
+        <input size="6" name="b_dana_shv">
+        <br><br>
+        <input type="submit" value="oblicz">
+        <br><br>
+        Pole =
+        <input size="6" name="pole">
+        Obwód =
+        <input size="6" name="obw">
+    </form>
+    <br>
+    <table>
+        <tr id="wyprowadz_pole_shv"></tr>
+        <tr id="wyprowadz_obwod_shv"></tr>
+    </table>
+
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>

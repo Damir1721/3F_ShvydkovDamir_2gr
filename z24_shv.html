@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 24 - Shvydkov</title>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    <div style="color:blue; font-size:35px;">
+        <script language="JavaScript">
+            var x1_shv = parseFloat(prompt("Podaj x1 (w stopniach)=", ""));
+            var x2_shv = parseFloat(prompt("Podaj x2=", ""));
+
+            // Zamiana x1 ze stopni na radiany
+            var rad_shv = (x1_shv * Math.PI) / 180;
+
+            // Imię: Damir (5 liter) -> wykładnik 5 / (5 + 2) = 5 / 7
+            var y1 = 3 * Math.pow(x1_shv, 5 / 7);
+            var y2 = 2 * Math.cos(rad_shv) + 3 * Math.sin(rad_shv);
+            var y3 = Math.pow(Math.pow(x1_shv, 5) + 2 * Math.pow(x2_shv, 4), 1 / 3) * Math.abs(x1_shv - x2_shv);
+
+            document.write("x1 = " + x1_shv + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2 = " + x2_shv + "<br>");
+            document.write("x1 = " + x1_shv + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x1 = " + rad_shv.toFixed(2) + "<br>");
+            document.write("y1 = " + y1.toFixed(2) + "<br>");
+            document.write("y2 = " + y2.toFixed(2) + "<br>");
+            document.write("y3 = " + y3.toFixed(2) + "<br>");
+        </script>
+    </div>
+
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>

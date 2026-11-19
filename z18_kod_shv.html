@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 18 KOD - Shvydkov</title>
+</head>
+<body>
+
+<textarea cols="90" rows="35">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Użycie funkcji - Shvydkov</title>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    <div style="color:navy; font-size:40px;">
+        <script language="JavaScript">
+            // Damir Shvydkov 3F
+            // Zadanie 18 - Definiowanie oraz użycie funkcji w JS
+
+            var a = parseFloat(prompt("a=", ""));
+            var b = parseFloat(prompt("b=", ""));
+
+            function suma_shv(a, b) {
+                return a + b;
+            }
+
+            function odejmowanie_shv(a, b) {
+                return a - b;
+            }
+
+            function mnozenie_shv(a, b) {
+                return a * b;
+            }
+
+            function od_kwadratu_shv(a, b) {
+                return a + "^2 = " + (a * a) + "<br>" + b + "^2 = " + (b * b);
+            }
+
+            function reszta_z_dzielenia_a_przez_b_shv(a, b) {
+                return a % b;
+            }
+
+            document.write("suma = " + suma_shv(a, b) + "<br>");
+            document.write("odejmowanie = " + odejmowanie_shv(a, b) + "<br>");
+            document.write("mnożenie = " + mnozenie_shv(a, b) + "<br>");
+            document.write(od_kwadratu_shv(a, b) + "<br>");
+            document.write("reszta z dzielenia a przez b = " + reszta_z_dzielenia_a_przez_b_shv(a, b) + "<br>");
+        </script>
+    </div>
+
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

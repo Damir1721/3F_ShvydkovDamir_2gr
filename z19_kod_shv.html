@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 19 KOD - Shvydkov</title>
+</head>
+<body>
+
+<textarea cols="90" rows="35">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 19 - Shvydkov</title>
+    <script type="text/javascript">
+        // Damir Shvydkov 3F
+        // Zadanie 19 - Wczytywanie danych w okienku
+
+        function Pole_shvydkov() {
+            var a_shv = parseFloat(document.getElementById('dlugosc').value);
+            var b_shv = a_shv * a_shv;
+            document.getElementById("nazwa").innerHTML = "Pole kwadratu= " + b_shv.toFixed(2) + " cm^2";
+        }
+
+        function obwod_shvydkov() {
+            var a_shv = parseFloat(document.getElementById('dlugosc').value);
+            var b_shv = 4 * a_shv;
+            document.getElementById("nazwa").innerHTML = "Obwód kwadratu= " + b_shv.toFixed(2) + " cm";
+        }
+
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Wszystko o KWADRACIE</h1><br><br>
+    Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+    <input type="button" name="pole" value="Oblicz pole" onclick="Pole_shvydkov()"><br><br>
+    <input type="button" name="obwod" value="Oblicz obwod" onclick="obwod_shvydkov()"><br><br>
+    <div style="color:red; font-size:50px;" id="nazwa"></div>
+
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

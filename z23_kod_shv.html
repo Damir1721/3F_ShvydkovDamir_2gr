@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 23 KOD - Shvydkov</title>
+</head>
+<body>
+
+<textarea cols="95" rows="35">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 23 - Shvydkov</title>
+    <script language="JavaScript">
+        // Damir Shvydkov 3F
+        // Zadanie 23 - Drabina oparta o mur (Pitagoras + arcustangens)
+
+        function drabina_shv(d_shv, x_shv) {
+            var d = parseFloat(d_shv);
+            var x = parseFloat(x_shv);
+            var dlugosc = Math.sqrt(Math.pow(d, 2) + Math.pow(x, 2));
+            document.getElementsByName('drabina')[0].value = dlugosc.toFixed(2);
+        }
+
+        function alfa_shv(d_shv, x_shv) {
+            var d = parseFloat(d_shv);
+            var x = parseFloat(x_shv);
+            var rad = Math.atan(d / x);
+            var stopnie = (rad * 180) / Math.PI;
+            document.getElementsByName('alfa')[0].value = stopnie.toFixed(2);
+        }
+
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+
+    <p>Pobliczanie odległości od drabiny i kąta</p>
+    <form name="formularz" action="..." onsubmit="drabina_shv(this.d_dana_shv.value, this.x_dana_shv.value); alfa_shv(this.d_dana_shv.value, this.x_dana_shv.value); return false">
+        Podaj d=
+        <input size="6" name="d_dana_shv">
+        Podaj x=
+        <input size="6" name="x_dana_shv">
+        <br><br>
+        <input type="submit" value="oblicz">
+        <br><br>
+        Drabina=
+        <input size="6" name="drabina">
+        Alfa=
+        <input size="6" name="alfa">
+    </form>
+
+    <br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>
